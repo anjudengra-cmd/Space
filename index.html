@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Solar System</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#027876;
+    color:white;
+}
+
+header{
+    background:#041d56;
+    text-align:center;
+    padding:25px;
+}
+
+nav{
+    background:#072c7a;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+section{
+    padding:30px;
+}
+
+.card{
+    background:#12316d;
+    padding:20px;
+    margin:20px 0;
+    border-radius:12px;
+}
+
+button{
+    background:orange;
+    color:black;
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:gold;
+}
+
+footer{
+    background:#041d56;
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌞 My Solar System</h1>
+<p>Explore the amazing planets!</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#planets">Planets</a>
+<a href="#facts">Facts</a>
+<a href="#quiz">Quiz</a>
+</nav>
+
+<section id="home">
+<h2>Welcome</h2>
+<p>The Solar System has one star called the Sun and eight amazing planets that orbit around it.</p>
+</section>
+
+<section id="planets">
+<h2>🪐 The 8 Planets</h2>
+
+<div class="card">
+<h3>Mercury</h3>
+<p>The closest planet to the Sun.</p>
+</div>
+
+<div class="card">
+<h3>Venus</h3>
+<p>The hottest planet.</p>
+</div>
+
+<div class="card">
+<h3>Earth</h3>
+<p>Our beautiful home planet.</p>
+<img src="https://cdn.mos.cms.futurecdn.net/FaWKMJQnr2PFcYCmEyfiTm-970-80.jpg.webp">
+</div>
+
+<div class="card">
+<h3>Mars</h3>
+<p>Known as the Red Planet.</p>
+</div>
+
+<div class="card">
+<h3>Jupiter</h3>
+<p>The biggest planet in our Solar System.</p>
+</div>
+
+<div class="card">
+<h3>Saturn</h3>
+<p>Famous for its beautiful rings.</p>
+</div>
+
+<div class="card">
+<h3>Uranus</h3>
+<p>Rotates on its side.</p>
+</div>
+
+<div class="card">
+<h3>Neptune</h3>
+<p>The farthest planet from the Sun.</p>
+</div>
+
+</section>
+
+<section id="facts">
+<h2>⭐ Fun Facts</h2>
+
+<ul>
+<li>The Sun contains 99.8% of the Solar System's mass.</li>
+<li>Jupiter has more than 90 moons.</li>
+<li>Mars has the tallest volcano in the Solar System.</li>
+<li>One day on Venus is longer than one year on Venus.</li>
+</ul>
+
+</section>
+
+<section id="quiz">
+
+<h2>🚀 Quick Quiz</h2>
+
+<p>Which planet is known as the Red Planet?</p>
+
+<button onclick="answer()">Show Answer</button>
+
+<p id="result"></p>
+
+</section>
+
+<footer>
+
+<p>Anju Nihalani ❤️</p>
+
+</footer>
+
+<script>
+
+function answer(){
+document.getElementById("result").innerHTML="✅ Correct Answer: Mars";
+}
+
+</script>
+
+</body>
+</html>
